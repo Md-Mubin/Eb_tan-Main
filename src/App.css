@@ -1,0 +1,112 @@
+/* ============ Common Css Part Start ============ */
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #f6f4f0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background-color: #00000025;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #00000035;
+}
+
+/* ============ Common Css Part End ============ */
+
+/* ============ Banner Css Part Start ============ */
+
+.banner1{
+    animation: banner1image 2s linear alternate infinite;
+}
+
+@keyframes banner1image {
+    0%{
+        transform: rotate(-10deg);
+    }100%{
+        transform: rotate(10deg);
+    }
+}
+
+
+.banner2{
+    animation: banner2image 2s linear alternate infinite;
+}
+
+@keyframes banner2image {
+    0%{
+        transform: rotate(10deg);
+    }100%{
+        transform: rotate(-10deg);
+    }
+}
+
+/* ============ Banner Css Part End ============ */
+
+/* ============ HandWash Css Part Start ============ */
+
+.handwash{
+    animation: handwashImage 1s linear alternate infinite;
+}
+
+@keyframes handwashImage {
+    0%{
+        transform: translateY(40px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(15px);
+    }
+}
+/* ============ HandWash Css Part End ============ */
+
+/* ============ Cream Css Part Start ============ */
+
+.cream{
+    animation: cream 5s linear infinite;
+}
+
+@keyframes cream {
+    0%{
+        transform: translate(-200px);
+        z-index: 10;
+    }
+    50%{
+        transform: translate(450px);
+        z-index: 10;
+    }
+    51%{
+        transform: translate(450px);
+        z-index: -10;
+    }
+    100%{
+        transform: translate(-200px);
+        z-index: -10;
+    }
+}
+
+/* ============ Cream Css Part End ============ */
+
+
+
+
+
