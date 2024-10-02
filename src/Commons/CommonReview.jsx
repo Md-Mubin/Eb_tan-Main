@@ -6,7 +6,7 @@ const CommonReview = ({ reviewerName, reviewerWork }) => {
     return (
         <>
             {/* ================== Reviwers Part ================== */}
-            <ul className='flex flex-col items-center gap-[13px]'>
+            <ul className='flex flex-col items-center gap-2 lg:gap-[13px]'>
 
                 {/* ----- Star Icons ----- */}
                 <li className='flex gap-[25px]'>
@@ -18,7 +18,7 @@ const CommonReview = ({ reviewerName, reviewerWork }) => {
                 </li>
 
                 {/* ----- What Reviewers Says ----- */}
-                <li className='w-[441px] text-center font-ptSerif font-normal text-xl text-brandColor leading-[130%]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</li>
+                <li className='lg:w-[441px] text-center font-ptSerif font-normal text-xl text-brandColor leading-[130%]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</li>
 
                 {/* ----- Reviewers Name ----- */}
                 <li className='font-ptSerif font-normal text-4xl text-commonColor leading-[145%]'>{reviewerName}</li>

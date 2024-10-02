@@ -12,7 +12,7 @@ const Footer = () => {
       <footer className='w-full bg-brandColor py-16'>
         <ul className='container flex flex-col items-center'>
           <li className='font-inter font-black text-[34px] text-white leading-[125%]'>EbTan Cosmetics</li>
-          <li className='flex gap-[33px] mt-[43px]'>
+          <li className='flex flex-col items-start lg:flex-row gap-[33px] mt-[43px]'>
             <Link to = "#" className='font-inter font-medium text-lg text-white leading-[125%]'>Home</Link>
             <Link to = "#" className='font-inter font-medium text-lg text-white leading-[125%]'>About</Link>
             <Link to = "#" className='font-inter font-medium text-lg text-white leading-[125%]'>Product</Link>
