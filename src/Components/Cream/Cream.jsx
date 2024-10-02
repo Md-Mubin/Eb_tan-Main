@@ -18,7 +18,7 @@ const Cream = () => {
 
                     <ul className='relative'>
                         <img src="images/bg_ash.png" alt="cream_bg_image" />
-                        <img src="images/cream.png" alt="cream_image" className='absolute top-[-80px] cream'/>
+                        <img src="images/cream.png" alt="cream_image" className='absolute top-0 lg:top-[-80px] cream w-[100px] sm:w-[180px] lg:w-[250px] xl:w-fit'/>
                     </ul>
 
                     <ul>
@@ -33,7 +33,7 @@ const Cream = () => {
                             <CommonToggle info={"Benefits"} infoHead={"Benefits"} isopen={open === "Benefits"}  ontoggle = {()=>handleToggle("Benefits")}/>
                         </li>
 
-                        <li className='mt-[37px] flex items-center gap-4 xl:gap-[27px]'><CommonButton /> <span className='font-ptSerif font-normal text-3xl xl:text-[31px] text-brandColor leading-[145%]'>৳ 500</span></li>
+                        <li className='mt-[37px] flex items-center gap-4 xl:gap-[27px]'><CommonButton /> <span className='font-ptSerif font-normal text-xl xl:text-3xl xl:text-[31px] text-brandColor leading-[145%]'>৳ 500</span></li>
                     </ul>
                 </div>
             </section>

@@ -11,7 +11,7 @@ import { HiMiniFaceSmile }   from 'react-icons/hi2'
 const Handwash = () => {
     return (
         <>
-        <section className='w-full bg-[#ECEBE6] pt-[50px] lg:pt-[110px] lg:pb-[149px]'>
+        <section className='w-full bg-[#ECEBE6] pt-[50px] lg:pt-[110px] pb-20 lg:pb-[149px]'>
             <div className="container flex flex-col lg:flex-row lg:justify-between items-center">
                 <ul className='flex flex-col items-center'>
                     
@@ -26,7 +26,7 @@ const Handwash = () => {
                 </ul>
                 <ul className='mt-10 lg:mt-0 pl-8 lg:pl-0 relative'>
                     <img src="images/bg_handwash.png" alt="hand_wash_bg_image" />
-                    <img src="images/handwash.png" alt="hand_wash_bg_image" className='absolute top-[-140px] right-0 handwash'/>
+                    <img src="images/handwash.png" alt="hand_wash_bg_image" className='absolute top-0 lg:top-[-140px] right-1/4 lg:right-0 handwash w-[100px] sm:w-[200px] lg:w-fit'/>
                 </ul>
             </div>
         </section>

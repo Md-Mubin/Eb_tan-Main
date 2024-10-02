@@ -15,10 +15,10 @@ const Banner = () => {
             <section className='container mt-[40px] lg:mt-[98px] pb-[100px] lg:pb-[191px] lg:flex flex-col  lg:flex-row lg:justify-center items-center gap-[77px]'>
 
                 {/* ---------- image part ---------- */}
-                <ul className='flex justify-center relative'>
+                <ul className='flex justify-center items-center relative'>
                     <img src="images/bg_banner.png" alt="banner_image" />
-                    <img src="images/banner1.png" alt="banner1_image" className='absolute top-[-180px] right-0 banner1 w-[200px] lg:w-[80%]'/>
-                    <img src="images/banner2.png" alt="banner2_image" className='absolute top-[-100px] banner2 w-[250px] lg:w-[80%]'/>
+                    <img src="images/banner1.png" alt="banner1_image" className='absolute banner1 w-[250px] sm:w-[300px] lg:w-fit lg:top-[-180px] sm:right-20 lg:right-0'/>
+                    <img src="images/banner2.png" alt="banner2_image" className='absolute banner2'/>
                 </ul>
 
                 {/* ---------- banner text part ---------- */}
