@@ -1,0 +1,32 @@
+.slideIn {
+    animation: in 0.4s ease-in forwards;
+}
+
+.slideOut {
+    animation: out 0.4s ease-out forwards;
+}
+
+
+@keyframes in {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateX(-120px);
+        opacity: 1;
+    }
+}
+
+@keyframes out {
+    0% {
+        transform: translateX(-120px);
+        opacity: 1;
+    }
+    
+    100% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+}
