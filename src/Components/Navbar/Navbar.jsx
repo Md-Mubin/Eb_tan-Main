@@ -1,7 +1,7 @@
 // ===================== All Imports
 import './Navbar.css'
 import { Link } from 'react-router-dom'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { HiBars3BottomLeft } from 'react-icons/hi2'
 
 const Navbar = () => {
@@ -9,16 +9,9 @@ const Navbar = () => {
     // for toggle method
     const [navItems, setNavItems] = useState(false)
 
-    // const [reload, setReload] = useState(true)
-
     const toggleNav = () => {
         setNavItems(!navItems)
-        // setReload(true)
     }
-
-    // useEffect(()=>{
-    //     setReload(false)
-    // },[])
 
     return (
         <>
@@ -35,13 +28,16 @@ const Navbar = () => {
                         <HiBars3BottomLeft onClick={toggleNav} className={navItems ? 'text-4xl cursor-pointer rotate-[-360deg] duration-500' : 'text-4xl rotate-180 duration-500 cursor-pointer'} />
 
                         {/* toggle effect */}
-                            <ul className={`w-[150px] flex flex-col text-center gap-3 py-4 bg-[#ff9d9da8] absolute rounded-2xl ${navItems ? "slideIn" : "slideOut"}`}>
+                        <ul className={navItems ? "slideIn" : "slideOut"}>
+
+                            <li className="w-[150px] flex flex-col text-center gap-3 py-4 bg-[#ff9d9da8] absolute rounded-2xl">
                                 <Link to="#" className='font-inter font-normal hover:font-semibold 2xl:py-2 w-full hover:bg-red-300 hover:text-white duration-200 rounded-2xl'>Home</Link>
                                 <Link to="#" className='font-inter font-normal hover:font-semibold 2xl:py-2 w-full hover:bg-red-300 hover:text-white duration-200 rounded-2xl'>About us</Link>
                                 <Link to="#" className='font-inter font-normal hover:font-semibold 2xl:py-2 w-full hover:bg-red-300 hover:text-white duration-200 rounded-2xl'>Product</Link>
                                 <Link to="#" className='font-inter font-normal hover:font-semibold 2xl:py-2 w-full hover:bg-red-300 hover:text-white duration-200 rounded-2xl'>Contact</Link>
-                            </ul>
-                        
+                            </li>
+                        </ul>
+
                     </li>
                 </ul>
             </nav>

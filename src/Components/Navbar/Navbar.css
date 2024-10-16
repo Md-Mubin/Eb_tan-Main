@@ -1,18 +1,17 @@
 .slideIn {
-    animation: in 0.4s ease-in forwards;
+    animation: in 0.4s ease-in-out forwards;
 }
 
 .slideOut {
-    animation: out 0.4s ease-out forwards;
+    animation: out 0.4s ease-in-out forwards;
 }
-
 
 @keyframes in {
     0% {
         transform: translateX(50px);
         opacity: 0;
     }
-    
+
     100% {
         transform: translateX(-120px);
         opacity: 1;
@@ -24,7 +23,7 @@
         transform: translateX(-120px);
         opacity: 1;
     }
-    
+
     100% {
         transform: translateX(50px);
         opacity: 0;
